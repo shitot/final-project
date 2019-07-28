@@ -8,8 +8,7 @@ CheckList::CheckList(Border * _border, short _left, short _top, vector<string> _
 {
 	for (int i = 0; i < _values.size(); i++) {
 		checkBoxs.push_back(new CheckBox(_left + 2, 1 + (i * 3), _values[i]));
-		COORD pos = { _left + 2  ,  1 + (i * 3) };
-		checkBoxCoord.push_back(pos);
+		checkBoxCoord.push_back({ _left + 2  , 1 + (i * 3)});
 	}
 }
 
@@ -27,26 +26,13 @@ void CheckList::draw(Graphics & g, int x, int y, size_t z)
 //reaction to mouse press
 void CheckList::mousePressed(int x, int y, bool isLeft)
 {
-		// cout<<x<<","<<y<<endl;
-		// cout<<checkBoxCoord[0].X<<","<<checkBoxCoord[0].Y<<endl;
 		OutputDebugString("press");
-		// checkBoxs[0]->setIsSelected();
-		// checkBoxs[1]->setIsSelected();
-
-	if (y > checkBoxCoord[0].Y && y < checkBoxCoord[0].Y + 10 && (x > checkBoxCoord[0].X))
-	{
-	// 	// if (!isSelected)
-	// 	// {
-	// 	// 	this->flipBgToWhite();
-			this->flipBgToWhite();
-			checkBoxs[0]->setIsSelected();
-	// 	//}
-	// 	// else
-	// 	// {
-	// 	// 	this->flipBgToBlack();
-	// 	// 	checkBoxs->setIsSelected();
-	// 	// }
+	for (auto c : checkBoxs) {
+		if (y > c->getTop() && y < c->getTop() + 5  && (x > c->getLeft()-1 && x < c->getLeft()+2 ) ){
+			c->setIsSelected();
+		}
 	}
+
 }
 
 //reaction to key down press
