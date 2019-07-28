@@ -9,12 +9,12 @@
 ![buttons](../master/images/buttons.png)
 ![buttonPressed](../master/images/buttonPressed.png)
 
-3.CheckList - you can choose more than one option. you can go through the options with TAB and KEY DOWN and KEY UP and select with SPACE. 
+3.CheckList - you can choose more than one option. you can go through the options with TAB and KEY DOWN and KEY UP and select with SPACE. you can also select with MOUSE (you have to click in the middle)
 
 ![checkList](../master/images/checkList.png)
 ![checkListSelected](../master/images/checkListSelected.png)
 
-4. RadioBox - you can choose only one option. you can go through the options with TAB and KEY DOWN and KEY UP and select with SPACE.
+4. RadioList - you can choose only one option. you can go through the options with TAB and KEY DOWN and KEY UP and select with SPACE.
 
 ![radioBox](../master/images/radioBox.png)
 ![radioBoxSelected](../master/images/radioBoxSelected.png)
