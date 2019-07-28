@@ -29,7 +29,7 @@ void Panel::mousePressed(int x, int y, bool isLeft)
 		bool getFocus = c->canGetFocus();
 		if (getFocus)
 		{
-			if (y == topY && (x > leftX && x < (leftX + widthC - 1)))
+			if ((y > topY && y<topY+height) && (x > leftX && x < (leftX + widthC - 1)))
 			{
 				Control::setFocus(*c);
 				c->mousePressed(x, y, isLeft);
@@ -38,7 +38,7 @@ void Panel::mousePressed(int x, int y, bool isLeft)
 		}
 		else
 		{
-			if (y == topY && (x > left && x < (leftX + widthC - 1)))
+			if ( (y > topY && y<topY+height) && (x > left && x < (leftX + widthC - 1)))
 			{
 				c->mousePressed(x, y, isLeft);
 				break;
