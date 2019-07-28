@@ -31,6 +31,7 @@
 ![ComboBox](../master/images/comboBoxSelected2.png)
 
 7. Panel - 
+
 ![Panel](../master/images/Panel.png)
 
 8. MessageBox - when you click on select a message box opens 
