@@ -1,8 +1,11 @@
 # final-project
 
-hadar ivan הדר עיואן 205917339 
+hadar ivan הדר עיואן 205917339
+
 shahar levkovich שחר לבקוביץ 308141126
-bar azouri בר עזורי 205785124 
+
+bar azouri בר עזורי 205785124
+
 guy golpur 308353523 גיא גולפור 
 
 
